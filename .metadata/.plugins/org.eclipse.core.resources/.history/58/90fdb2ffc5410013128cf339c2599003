@@ -1,0 +1,44 @@
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+
+public class ShowDialogGUI extends JFrame {
+	private JButton button1, button2;
+	private MyDialog dialog;
+	
+	public ShowDialogGUI(){
+		setTitle("Show Dialog");
+		setSize(200, 100);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		button1 = new JButton("Login");
+		button2 = new JButton("Say hello");
+		ButtonListener listener = new ButtonListener();
+		button1.addActionListener(listener);
+		button2.addActionListener(listener);
+		// Experiment with different locations!
+		add(button1, BorderLayout.CENTER);
+		add(button2, BorderLayout.SOUTH);
+	}
+	class ButtonListener implements ActionListener {
+	    public void actionPerformed(ActionEvent e) {
+		    if (e.getSource() == button1) {
+			dialog = new MyDialog();
+			dialog.setVisible(true);
+		    } else {
+			if (dialog != null) {
+			  String name = dialog.getName();
+	          JOptionPane.showMessageDialog(null, "Hello " + name);
+		    }
+	}
+	}
+	}
+	public static void main(String[] args) {
+		ShowDialogGUI gui = new ShowDialogGUI();	
+		gui.setVisible(true);
+	}
+}

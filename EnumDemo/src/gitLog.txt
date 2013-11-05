@@ -1,0 +1,29 @@
+commit 632bd4e187d49eec458b75219233baa640a93393
+Author: unknown <crader@MZ022I.adit.mines.edu>
+Date:   Thu Sep 5 12:02:43 2013 -0600
+
+    Now I'm adding the enum
+
+commit 6bf7848a4fd8b256367bc3864893e40b58d5d5db
+Author: unknown <crader@MZ022I.adit.mines.edu>
+Date:   Thu Sep 5 12:02:15 2013 -0600
+
+    Add day of week enum
+
+commit a981c59405a14bfcbf8bfdc9b8364bedd1ad29d6
+Author: unknown <crader@MZ022I.adit.mines.edu>
+Date:   Thu Sep 5 11:54:09 2013 -0600
+
+    Added invoices and tracking
+
+commit e2be65a0a5405f88874108c1d89fba1dce7347f1
+Author: unknown <crader@MZ022I.adit.mines.edu>
+Date:   Thu Sep 5 11:43:35 2013 -0600
+
+    Added a reminder for Tuesday patients
+
+commit 10a84928775a743ac9c8ec3d9a8a150e1fe8a94f
+Author: unknown <crader@MZ022I.adit.mines.edu>
+Date:   Thu Sep 5 11:41:50 2013 -0600
+
+    Initial load of enum demo
